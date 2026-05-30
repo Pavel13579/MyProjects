@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SNIP — URL Shortener</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <div class="wrapper">
+
+    <header>
+      <div class="logo-mark">
+        <span class="scissors">✂️</span>
+        <span class="logo-text">SNIP</span>
+      </div>
+      <p class="tagline">Rövidítsd le a hosszú linkeket másodpercek alatt</p>
+    </header>
+
+    <div class="card">
+      <div class="input-group">
+        <input
+          type="url"
+          id="url-input"
+          class="url-input"
+          placeholder="https://hosszu-link-ide.com/valami/nagyon/hosszu/url"
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <span class="input-icon">🔗</span>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn btn-shorten" id="btn-shorten">
+          <span class="btn-icon">⚡</span>
+          Rövidítés
+        </button>
+        <button class="btn btn-qr" id="btn-qr">
+          <span class="btn-icon">◼</span>
+          QR Kód
+        </button>
+      </div>
+    </div>
+
+    <div class="results">
+
+      <div class="result-box" id="result-short">
+        <span class="result-label">Rövid link</span>
+        <div class="result-link-row">
+          <a class="result-link" id="result-link-anchor" href="#" target="_blank">snip.io/xxxxxx</a>
+          <button class="copy-btn" id="copy-btn">Másolás</button>
+        </div>
+      </div>
+
+      <div class="qr-box" id="result-qr">
+        <span class="qr-label">QR Kód</span>
+        <div class="qr-placeholder" id="qr-placeholder"></div>
+        <img id="qr-img" src="" alt="QR kód" />
+        <p class="qr-caption" id="qr-caption">Beolvasással megnyílik a rövid link</p>
+      </div>
+
+    </div>
+
+  </div>
+
+<script src="script.cjs"></script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "nodeproj",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pavel13579/MyProjects.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pavel13579/MyProjects/issues"
+  },
+  "homepage": "https://github.com/Pavel13579/MyProjects#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mysql": "^2.18.1",
+    "sqlite3": "^6.0.1"
+  },
+  "keywords": [],
+  "description": ""
+}
